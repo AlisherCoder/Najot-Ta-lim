@@ -3,7 +3,7 @@ import time
 import json
 
 def get_info():
-    with open('fayl.json') as f:
+    with open('test_fayl.json') as f:
         us = json.load(f)
     return f"Ism: {us['nomi']}\nFamiliya: {us['Fam']}\nRaqam: {us["Raqam"]}\nID: {us['id']}\n"
 
@@ -57,6 +57,7 @@ def log_in():
         except:
             os.system("cls")
             print("Xato buyruq berildi.\n")
+
     while True:
         print("[1] Mening kurslarim.\n"
               "[2] Uyga vazifalar.\n"
@@ -66,7 +67,7 @@ def log_in():
         menu = input(">>> ")
         match menu:
             case '1':
-                with open('fayl.json') as f:
+                with open('test_fayl.json') as f:
                     user = json.load(f)
                 os.system("cls")
                 print(user['Kurslar'],'\n')
@@ -91,3 +92,4 @@ def log_in():
             case _:
                 os.system("cls")
                 print("Xato buyruq berildi.\n")
+# oxirgi yozilgan kod

@@ -22,3 +22,4 @@ while True:
             print("Xato buyruq berildi.\n")
             time.sleep(1)
             os.system('cls')
+# Oxirgi yozilgan kod
